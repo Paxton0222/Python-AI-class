@@ -1,0 +1,36 @@
+Mongodb指令紀錄:
+db.test.save({"name":"Paxton"}) #存入
+db.test.find() #呼叫
+help #Mongodb shell help
+show dbs #顯示資料庫資訊清單
+路徑: C:\Program Files\MongoDB\Server\4.2\bin
+
+mongo.js插入資料:
+db.students.insert({
+    name:'Paxton Li',
+    dob:'22/02/2002',
+    gender:'m',
+    favorite_color:'Blue',
+    nationality:'taiwan',
+});
+db.students.insert({
+    name:'Oolong Lin',
+    dob:'2020/07/29',
+    gender:'m',
+    favorite_color:'gray',
+    nationality:'taiwan',
+});
+db.students.insert({
+    name:'Bob',
+    dob:'29/07/2020',
+    gender:'m',
+    favorite_color:'red',
+    nationality:'taiwan',
+});
+
+呼叫:
+db.students.find()
+db.students.findone()
+
+安裝python 套件:
+pip install Pymongo
